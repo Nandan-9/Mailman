@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Document</title>
+    <!-- <link rel="stylesheet" href="style.css" /> -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+
+  <body>
+    <div class="app">
+      <div class="screen join-screen active">
+        <div class="form">
+          <h2>share your file</h2>
+          <div class="form-input">
+            <label for="join-id">join-id</label>
+            <input type="text" id="join-id">
+          </div>
+          <div class="form-input">
+            <button id="receiver-start-con-btn">Connect</button>
+          </div>
+        </div>
+      </div>
+      <div class="screen fs-screen">
+        <div class="file-list">
+          <div class="title">Shared files</div>
+        </div>
+      </div>
+    </div>
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="receiver.js"></script>
+  </body>
+</html>
