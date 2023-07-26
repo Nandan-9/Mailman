@@ -1,0 +1,191 @@
+/* styles.css */
+
+/* Global styles */
+* {
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  list-style: none;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Poppins, sans-serif;
+}
+
+nav {
+  background: #101010;
+  height: 80px;
+  width: 100%;
+}
+label.logo {
+  color: white;
+  font-size: 35px;
+  line-height: 80px;
+  padding: 0 100px;
+  font-weight: bold;
+}
+nav ul {
+  float: right;
+  margin-right: 20px;
+}
+nav ul li {
+  display: inline-block;
+  line-height: 80px;
+  margin: 0 5px;
+}
+nav ul li a {
+  color: white;
+  font-size: 17px;
+  padding: 7px 13px;
+  border-radius: 3px;
+  text-transform: uppercase;
+}
+a.active,
+a:hover {
+  background: #1b9bff;
+  transition: 0.5s;
+}
+.checkbtn {
+  font-size: 30px;
+  color: white;
+  float: right;
+  line-height: 80px;
+  margin-right: 40px;
+  cursor: pointer;
+  display: none;
+}
+#check {
+  display: none;
+}
+@media (max-width: 952px) {
+  label.logo {
+    font-size: 30px;
+    padding-left: 50px;
+  }
+  nav ul li a {
+    font-size: 16px;
+  }
+}
+@media (max-width: 858px) {
+  .checkbtn {
+    display: block;
+  }
+  ul {
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background: #2c3e50;
+    top: 80px;
+    left: -100%;
+    text-align: center;
+    transition: all 0.5s;
+  }
+  nav ul li {
+    display: block;
+    margin: 50px 0;
+    line-height: 30px;
+  }
+  nav ul li a {
+    font-size: 20px;
+  }
+  a:hover,
+  a.active {
+    background: none;
+    color: #0082e6;
+  }
+  #check:checked ~ ul {
+    left: 0;
+  }
+}
+
+/* Title section */
+.Title {
+  width: 100%;
+  height: 250px;
+  top: 100px;
+  left: 0;
+  background: #020202;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.Title div {
+  color: white;
+  font-size: 50px;
+  font-family: Poppins, sans-serif;
+  font-weight: 400;
+  word-wrap: break-word;
+}
+
+.MainContent {
+  width: 100%;
+  height: 100%;
+  top: 350px;
+  left: 0;
+  background: #232322;
+}
+.Features {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  padding-top: 30px;
+}
+.Card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  transition: 0.3s;
+  width: 380px;
+  display: flex;
+  flex-direction: column;
+}
+
+.Card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}
+
+.Features .Container1 {
+  padding: 10px  16px;
+  height: 500px;
+  background: #144992;
+}
+
+.Features .Container2 {
+  padding: 2px 16px;
+  height: 500px;
+  background: #2271e3;
+}
+
+h3 {
+  padding-top: 20px;
+  color: white;
+  font-size: 26px;
+  font-weight: 400;
+  font-family: Poppins;
+  word-wrap: break-word;
+}
+.Content {
+  padding-top: 25px;
+  color: white;
+  font-weight: 300;
+  font-size: 18px;
+  font-family: Poppins;
+  word-wrap: break-word;
+  text-align: right;
+}
+
+.ReadMore {
+  align-items: right;
+  background: white;
+  border-radius: 5px;
+  /*It is at the bottom of the card*/
+  display: flex;
+}
+
+.Features .ReadRect{
+    display: flex;
+    justify-content: flex-end;
+}
