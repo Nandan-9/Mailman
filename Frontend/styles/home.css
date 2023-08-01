@@ -82,7 +82,13 @@ a:hover {
   left: 25%;
   word-wrap: break-word;
 }
-
+ 
+.container{
+  position: relative;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}/*
 .Card {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   transition: 0.3s;
@@ -110,7 +116,25 @@ a:hover {
   font-family: Poppins;
   word-wrap: break-word;
   text-align: right;
-}
+} */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 @media (max-width: 952px) {
   label.logo {
     font-size: 30px;
