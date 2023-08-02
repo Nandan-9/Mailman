@@ -1,39 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <!-- <link rel="stylesheet" href="style.css" /> -->
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
-      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
-  </head>
-
-  <body>
-    <div class="app">
-      <div class="screen join-screen active">
-        <div class="form">
-          <h2>share your file</h2>
-          <div class="form-input">
-            <label for="join-id">join-id</label>
-            <input type="text" id="join-id">
-          </div>
-          <div class="form-input">
-            <button id="receiver-start-con-btn">Connect</button>
-          </div>
-        </div>
-      </div>
-      <div class="screen fs-screen">
-        <div class="file-list">
-          <div class="title">Shared files</div>
-        </div>
-      </div>
-    </div>
+</head>
+<body>
+    <h1>server started</h1>
+    <input type="text" id="room">
+    <button class="download-btn" id="download-btn">download</button>
+    <p id="output"></p>
+    <button type="button" id="join">join</button>
     <script src="/socket.io/socket.io.js"></script>
     <script src="receiver.js"></script>
-  </body>
+    
+</body>
 </html>
