@@ -21,6 +21,7 @@ body{
   font-family: 'Poppins', sans-serif;
 }
 .search-bar input[type="text"]{
+  padding-left: 45px;
   left: 256px;
   position:relative;
   width: 920px;
@@ -28,21 +29,41 @@ body{
   border: 1px;
   border-radius: 5px;
   background-color: #292929;
+  color: aliceblue;
+  font-family: 'Poppins', sans-serif;
+
 }
 .search-bar ::placeholder{
   font-family: 'Poppins', sans-serif;
-  padding-left: 100px;
   
 }
 .search-bar button{
   position: relative;
 }
-.side-bar{
-  position: absolute;
-  top: 70px;
-  height: 93%;
-  width: 250px;
-  border-right: 1px solid #444343;
-  display: flex;
-  justify-content: center;
+button{
+  background:none;
+  border: none;
+  position:absolute;
+  left: 200px;
 }
+ul {
+  list-style-type: none;
+}
+li{
+  text-decoration: none;
+  padding: 10px 0px;
+
+}
+a{
+  text-decoration: none;
+}
+
+nav{
+  position: absolute;
+  width: 250px;
+  height: 100%;
+  top: 70px;
+  left: 23px;
+  border-right: 1px solid #444343;
+}
+
