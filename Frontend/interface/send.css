@@ -7,6 +7,7 @@ body{
 }
 .header{
   position:relative;
+  top: 10px;
   width: 100%;
   height: 51px;
   border-bottom: 1px solid #444343;
@@ -14,6 +15,7 @@ body{
 }
 .header h2{
   position:absolute;
+  top: 20px;
   left: 56px;
   transform: translate(0%, -50%);
   letter-spacing: 4.7px;
@@ -33,10 +35,6 @@ body{
   font-family: 'Poppins', sans-serif;
 
 }
-.search-bar ::placeholder{
-  font-family: 'Poppins', sans-serif;
-  
-}
 .search-bar button{
   position: relative;
 }
@@ -51,7 +49,8 @@ ul {
 }
 li{
   text-decoration: none;
-  padding: 10px 0px;
+  padding: 15px 0px;
+  margin: 10px;
 
 }
 a{
@@ -66,4 +65,57 @@ nav{
   left: 23px;
   border-right: 1px solid #444343;
 }
+.nav-item{
+  font-family: 'Poppins', sans-serif;
+  padding-left: 10px;
+  color: aliceblue;
+  
+}
+a:hover{
+  margin: 20px;
+  transition  : all 0.1s ease;
+}
 
+.active{
+  margin: 20px;
+}
+
+.content-area{
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  left: 17%;
+
+}
+.content-area .main-heading{
+  font-family: 'Poppins', sans-serif;
+  position: absolute;
+  top: 50px;
+  color: aliceblue;
+
+}
+
+.content-area   .file-list-title{
+  font-family: 'Poppins', sans-serif;
+  color: aliceblue;
+  font-size: 15px;
+  display: flex;
+  justify-content: space-between
+
+
+}
+table{
+  font-family: 'Poppins', sans-serif;
+  color: aliceblue;
+  position: relative;
+  top: 100px;
+}
+
+.content-area th{
+  width: 420px;
+}
+
+.content-area .head{
+  border-bottom: 1px solid #444343;
+
+}
