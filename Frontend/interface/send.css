@@ -34,11 +34,24 @@ label{
   position: relative;
   right: 240px;
   padding: 10px 30px 10px 30px;
-  border-radius: 10px;
+  border-radius: 5px;
   background-color: rgb(18, 105, 182);
   font-family: 'Poppins', sans-serif;
   
 }
+.label-image{
+  color: rgb(255, 255, 255);
+  position: absolute;
+  padding: 10px 30px 10px 30px;
+  border-radius: 5px;
+  background-color: rgb(18, 105, 182);
+  font-family: 'Poppins', sans-serif;
+}
+
+.label-share{
+  position: absolute;
+}
+
 
 label :hover{
   color: rgb(0, 0, 0);
