@@ -2,7 +2,7 @@
 
 body{
   background-color: #232322;
-  overflow-y: hidden; /* Hide vertical scrollbar */
+  /* overflow-y: hidden; Hide vertical scrollbar */
   overflow-x: hidden;
 }
 .header{
@@ -140,4 +140,21 @@ table{
 .content-area .head{
   border-bottom: 1px solid #444343;
 
+}
+
+.gallery{
+  position: absolute;
+  top: 80px;
+  left: 350px;
+  width: auto;
+  display: flex;
+  flex-wrap: wrap;
+
+}
+
+.gallery img{
+  flex-wrap: wrap;
+  width: auto;
+  height: 400px;
+  padding: 10px;
 }
