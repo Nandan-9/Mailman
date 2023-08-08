@@ -12,13 +12,16 @@
 </head>
 <body>
     <div class="header">
-        <h2>Mailman</h2>
-        <input type="file" name="file" class="file-input" id="file">
-        <label class="label-" for="file">Choose a file</label>
+        <a href="../index.html">
+            <h2>Mailman</h2>
+            </a>
+        <input type="file" name="file" class="file-input" id="file" hidden>
+        <label class="label-gallery" for="file">Choose a file</label>
             Upload
         </label>
+        
     </div>
-    <nav>
+    <nav class="sidebar">
         <ul>
             <li><a href="drive.html">
                 <i class="fa-solid fa-folder fa-xl" style="color: #2269e4;"></i>
@@ -44,9 +47,6 @@
     </nav>
     <!-- Gallery -->
     <div class="gallery" id="gallery">
-        <img src="../public/image1.jpg">
-        <img src="../public/image2.jpg">
-        <img src="../public/image3.jpg">
     </div>
   <!-- Gallery -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>

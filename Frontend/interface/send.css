@@ -91,7 +91,9 @@ li{
 a{
   text-decoration: none;
 }
-
+.home{
+  position: absolute;
+}
 nav{
   position: absolute;
   width: 250px;
@@ -164,6 +166,7 @@ th{
   left: 350px;
   width: auto;
   display: flex;
+
   flex-wrap: wrap;
 
 }
@@ -174,7 +177,11 @@ th{
   height: 400px;
   padding: 10px;
 }
+.label-gallery{
+  position: absolute;
+  right: 20px;
 
+}
 .container{
   display: flex;
   flex-direction: column;
@@ -225,3 +232,7 @@ th{
   font-size: 15px;
   border-radius: 5px;
 }
+
+
+
+/* Media query for screens with a max-width of 1000px */
