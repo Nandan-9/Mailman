@@ -143,9 +143,12 @@ table{
   font-family: 'Poppins', sans-serif;
   color: aliceblue;
   position: relative;
-  top: 100px;
+  top: 120px;
 }
 
+th{
+  color: rgb(26, 82, 236);
+}
 .content-area th{
   width: 420px;
 }
@@ -211,4 +214,14 @@ table{
 
 .drag-area .btn{
   color: rgb(36, 106, 255);
+}
+.drag-area button{
+  position: absolute;
+  left: 360px;
+  top: 350px;
+  background-color: rgb(36, 106, 255);
+  color: rgb(255, 255, 255);
+  padding: 8px 25px 8px 25px;
+  font-size: 15px;
+  border-radius: 5px;
 }

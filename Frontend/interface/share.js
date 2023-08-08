@@ -1,6 +1,17 @@
 const dragArea = document.querySelector('.drag-area');
 const dragText = document.querySelector('.head');
-const icon = document.querySelector('.icon');
+let button = document.querySelector('.btn');
+let input = document.querySelector('input');
+
+let  file;
+
+button.onclick = () =>{
+    input.click();
+}
+
+input.addEventListener('change', () =>{
+    file = this.files[0];
+})
 
 dragArea.addEventListener('dragover', (event) =>{
     event.preventDefault();
@@ -16,5 +27,15 @@ dragArea.addEventListener('dragleave', (event) =>{
 
 dragArea.addEventListener('drop',(event) =>{
     event.preventDefault();
-    console.log('dropped');
+    file = event.dataTransfer.files[0];
+    let fileReader = new FileReader();
+    fileReader.onload = () =>{
+        let fileURL = fileReader.result;
+        let fileTag = `<span >${file.name}</span>`
+        let button  = `<button onClick="shareFile()">Share</button> `
+        dragArea.innerHTML  = fileTag
+        dragArea.innerHTML += button
+    }
+    console.log(file);
+    fileReader.readAsDataURL(file)
 })
