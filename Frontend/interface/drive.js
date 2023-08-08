@@ -1,10 +1,58 @@
-var file = [];
+var file = [  {
+  type: "JPEG",
+  name: "image1.jpg",
+  size: "1.5mb"
+},
+{
+  type: "PNG",
+  name: "image2.png",
+  size: "2.2mb"
+},
+{
+  type: "PDF",
+  name: "document1.pdf",
+  size: "5mb"
+},
+{
+  type: "DOCX",
+  name: "document2.docx",
+  size: "0.8mb"
+},
+{
+  type: "MP3",
+  name: "song1.mp3",
+  size: "3.7mb"
+},
+{
+  type: "TXT",
+  name: "textfile.txt",
+  size: "0.2mb"
+},
+{
+  type: "CSV",
+  name: "data.csv",
+  size: "1.1mb"
+},
+{
+  type: "GIF",
+  name: "animation.gif",
+  size: "0.6mb"
+},
+{
+  type: "MP4",
+  name: "video.mp4",
+  size: "10mb"
+},
+{
+  type: "ZIP",
+  name: "archive.zip",
+  size: "7.5mb"
+}];
 
 document.getElementById('file').addEventListener('change', function () {
   if (this.files.length > 0) {
     var fileSizeInMB = this.files[0].size / (1024 * 1024);
     file.push({
-      no: file.length + 1,
       type: this.files[0].type,
       name: this.files[0].name,
       size: fileSizeInMB.toFixed(2),
@@ -39,7 +87,6 @@ function buildTable(data) {
 
   for (var i = 0; i < data.length; i++) {
     var row = `<tr>
-        <td>${data[i].no}</td>
         <td>${data[i].type}</td>
         <td>${data[i].name}</td>
         <td>${data[i].size}</td>

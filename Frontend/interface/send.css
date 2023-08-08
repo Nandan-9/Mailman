@@ -59,7 +59,7 @@ label :hover{
 }
 .search-bar input[type="text"]{
   padding-left: 45px;
-  left: 256px;
+  left: 26px;
   position:relative;
   width: 920px;
   height: 38px;
@@ -149,10 +149,18 @@ table{
 th{
   color: rgb(26, 82, 236);
 }
-.content-area th{
-  width: 420px;
-}
+.content-area td{
+  padding: 15px 150px 10px;
 
+}
+.content-area th {
+  width:500px;
+  padding: 0px 150px 10px;
+}
+.mytable{
+  padding: 0px 150px 10px;
+
+}
 .content-area .head{
   border-bottom: 1px solid #444343;
 
