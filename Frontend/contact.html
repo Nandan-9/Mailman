@@ -33,63 +33,60 @@
         </div>
     </div>
     
-    <div class="container">
-        <div class="top-left" style="height: 100%;display: flex;flex-direction: column; justify-content: space-between;">
-            <p style="padding: 20px;"> So join us today and discover how easy file sharing can be with MailMan – the hassle-free way to exchange files in your local network.</p>
-            <br>
+    <!-- <div class="container">
+            <p>So join us today and discover how easy file sharing can be with MailMan – the hassle-free way to exchange files in your local network.</p>
             <p>MailMan Dev<br>
                 7 Silicon Avenue<br>
                 NYC<br><br>
                 
                 888-777-6665<br>
                 <a href="mailto:reach.mailman@gmail.com" style="color:white">reach.mailman@gmail.com</a></p>
-        </div>
-        <div class="right">
             <table>
-                <tr>
-                    <th colspan="2">Get in Touch</th>
-                </tr>
-                <tr>
-                    <td><label for="first_name">First Name:</label></td>
-                    <td><input type="text" id="first_name" name="first_name" required></td>
-                    <td><label for="last_name">Last Name:</label></td>
-                    <td><input type="text" id="last_name" name="last_name"></td>
-                </tr>
-                <tr>
-                    <td colspan="2"><label for="email">Email:</label></td>
-                </tr>
-                <tr>
-                    <td colspan="2"><input type="email" id="email" name="email" required></td>
-                </tr>
-                <tr>
-                    <td colspan="2"><label for="content">Content:</label></td>
-                </tr>
-                <tr>
-                    <td colspan="2"><textarea id="content" name="content" rows="4" required></textarea></td>
-                </tr>
-                <tr>
-                    <td colspan="2"><input type="submit" value="Submit"></td>
-                </tr>
+                
             </table>
-            <div id="responseMessage"></div>
-        </div>
-    </div>
+    </div> -->
 
-    
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <div class="content">
-        <span class="cont-1">So join us today and discover how easy file sharing can be with MailMan – the hassle-free way to exchange files in your local network.
-        </span>
-            <span class="cont-2">Our team is driven by a shared vision of leveraging the power of technology to <br>solve real-world problems and enhance user experiences. With a diverse range of skills and expertise,<br> we collaborated closely to bring this project to life, from ideation to implementation.<br>
-            </span>
-            <span class="cont-3">
-                hfvk</span>
-    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-12 col-md-4" style="margin-top: 15px;">
+                <div class="card">
+                    <div class="card-body"
+                        style="height: 100%;display: flex;flex-direction: column; justify-content: space-between;">
+                        <div>
+                            <p class="card-text" style="padding-top: 30px;">So join us today and discover how easy file sharing can 
+                                be with MailMan<br> the hassle-free way to exchange files in your local network.</p>
+                        </div>
+                        <div>
+                            <p>MailMan Dev<br>
+                                7 Silicon Avenue<br>
+                                NYC<br><br><br>
+                                
+                                888-777-6665<br>
+                                <a href="mailto:reach.mailman@gmail.com" style="color:white">reach.mailman@gmail.com</a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col-12 col-md-4" style="margin-top: 15px;">
+                <div class="card">
+                    <div class="card-body"
+                        style="height: 100%;display: flex;flex-direction: column; justify-content: space-between;">
+                        <div>
+                            <p>MailMan Dev<br>
+                                7 Silicon Avenue<br>
+                                NYC<br><br><br>
+                                
+                                888-777-6665<br>
+                                <a href="mailto:reach.mailman@gmail.com" style="color:white">reach.mailman@gmail.com</a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
 
     <footer class="bg-dark text-center " style="color: white; font-size: 15px;">
         <img src="public/line-2.png" style="width :100% ;padding: 20px;">
@@ -110,25 +107,6 @@
     integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
     crossorigin="anonymous"
   ></script>
-  <script>
-    const form = document.querySelector('form');
-        const responseMessage = document.getElementById('responseMessage');
-
-        form.addEventListener('submit', function(event) {
-            event.preventDefault();
-
-            // Perform form validation here
-            const firstName = document.getElementById('first_name').value;
-            const email = document.getElementById('email').value;
-            const content = document.getElementById('content').value;
-
-            if (firstName && email && content) {
-                responseMessage.textContent = "Thank you! We will reach out to you soon.";
-            } else {
-                responseMessage.textContent = "Please fill out all required fields.";
-            }
-        });
-  </script>
 </body>
 
 </html>
