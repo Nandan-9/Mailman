@@ -91,9 +91,7 @@ li{
 a{
   text-decoration: none;
 }
-.home{
-  position: absolute;
-}
+
 nav{
   position: absolute;
   width: 250px;
@@ -232,7 +230,3 @@ th{
   font-size: 15px;
   border-radius: 5px;
 }
-
-
-
-/* Media query for screens with a max-width of 1000px */
