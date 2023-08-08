@@ -13,7 +13,6 @@ body {
   margin: 0;
   padding: 0;
   background-color: #232322;
-
   font-family: Poppins, sans-serif;
 }
 
@@ -63,78 +62,6 @@ a:hover {
 #check {
   display: none;
 }
-
-.Title.BlackSection {
-  background-color: black;
-  color: white;
-  padding: 20px;
-  height: 200px;
-  text-align: left;
-  line-height: 1.5;
-  min-height: 120px;
-}
-
-.TitleContent {
-  justify-content: center;
-  font-size: 50px;
-  font-weight: bold;
-  position: absolute;
-  left: 25%;
-  word-wrap: break-word;
-}
- 
-.container{
-  position: relative;
-  width: 100%;
-  display: flex;
-  justify-content: center;
-}/*
-.Card {
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-  transition: 0.3s;
-  padding: 20px;
-  background: #144992;
-  color: white;
-  position: relative;
-  height: 250px;
-}
-
-.Card h3 {
-  font-size: 26px;
-  font-weight: 400;
-  font-family: Poppins;
-  word-wrap: break-word;
-  position: absolute;
-  top: 10px;
-  left: 10px;
-}
-
-.Card .Content {
-  padding-top: 60px;
-  font-weight: 100;
-  font-size: 18px;
-  font-family: Poppins;
-  word-wrap: break-word;
-  text-align: right;
-} */
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 @media (max-width: 952px) {
   label.logo {
     font-size: 30px;
@@ -179,19 +106,78 @@ a:hover {
   }
 }
 
-@media (max-width: 1000px) {
-  .Card {
-    height: 300px;
-  }
+.Title.BlackSection {
+  background-color: black;
+  color: white;
+  padding: 20px;
+  height: 200px;
+  text-align: left;
+  line-height: 1.5;
+  min-height: 120px;
 }
-@media (max-width: 770px) {
-  .Card {
-    height: 20px;
-  }
+
+.TitleContent {
+  justify-content: center;
+  font-size: 50px;
+  font-weight: bold;
+  position: absolute;
+  left: 25%;
+  word-wrap: break-word;
 }
+
 @media (max-width: 1065px) {
   .TitleContent {
     font-size: 40px;
     left: 20%;
   }
+}
+
+.card {
+  font-family: Poppins, sans-serif;
+  font-size: 16px;
+}
+.card-title {
+  font-size: 35px;
+}
+
+@media (max-width: 992px) {
+  .card {
+    height: 320;
+    font-size: 20px;
+  }
+  .Image1 {
+    padding-top: 50px;
+    max-width: 700px;
+    height: auto;
+  }
+}
+
+@media (max-width: 1200px) {
+  .Image1 {
+    width: 150%;
+  }
+  .EndTitle{
+    font-size: 30px;
+  }
+  .EndContent{
+    font-size: 15px;
+  }
+}
+
+.EndTitle {
+  font-size: 40px;
+  color: white;
+}
+
+.EndContent {
+  padding-top: 25px;
+  font-size: 18px;
+  color: white;
+  font-weight: lighter;
+}
+
+.Image1 {
+  float: left;
+  height: auto;
+  margin-right: 20px;
 }
