@@ -138,12 +138,32 @@ footer{
 .content span{
   color: aliceblue;
   position: relative;
-  top: 100px;
+  top: 130px;
   margin-bottom: 10px;
   left: 200px;
   font-size: 20px;
 
 }
-.content.cont-1{
-  margin-bottom: 20px;
+
+.team{
+  position: absolute;
+  top: 470px;
+  left: 75%;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  border: 1px solid white;
+  border-radius: 10px;
+  color: aliceblue;
+  align-items: center;
+}
+.team a{
+  text-decoration: none;
+  color: aliceblue;
+}
+
+.team span {
+  padding: 20px;
+  font-size: 20px;
+  color: aliceblue;
 }
