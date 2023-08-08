@@ -12,7 +12,7 @@
 body {
   margin: 0;
   padding: 0;
-  color:white;
+  color: white;
   background-color: #232322;
   font-family: Poppins, sans-serif;
 }
@@ -99,7 +99,8 @@ a:hover {
   }
   a:hover,
   a.active {
-    background: none;
+  text-decoration: none;
+  background: none;
     color: #0082e6;
   }
   #check:checked ~ ul {
@@ -130,20 +131,47 @@ a:hover {
 }
 
 .container {
-  width:1080px;
+  width: 1080px;
   margin-left: 15%;
   margin-top: 30px;
   color: white;
 }
-
 table {
   border-collapse: collapse;
   border: 1px solid white;
   margin: 20px auto;
+  width: 100%;
 }
 
-th, td {
+th,
+td {
   padding: 10px;
   text-align: left;
 }
 
+input[type="text"],
+input[type="email"],
+textarea {
+  width: 100%;
+  padding: 8px;
+}
+
+input[type="submit"] {
+  background-color: #144992;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+.fail-message {
+  color: red;
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+.success-message {
+  color: white;
+  font-weight: bold;
+  margin-top: 10px;
+}

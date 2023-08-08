@@ -18,8 +18,8 @@
         <label class="logo" onclick="window.location.href='index.html';" style="cursor: pointer;">Mailman</label>
         <ul>
             <li><a href="index.html">Home</a></li>
-            <li><a href="interface/share.html">Send</a></li>
-            <li><a href="interface/receive.html">Receive</a></li>
+            <li><a href="share.html">Send</a></li>
+            <li><a href="receive.html">Receive</a></li>
             <li><a href="about.html">About</a></li>
             <li><a class="active" href="contact.html">Contact</a></li>
         </ul>
@@ -32,52 +32,22 @@
             </span>
         </div>
     </div>
-    
-    <!-- <div class="container">
-            <p>So join us today and discover how easy file sharing can be with MailMan – the hassle-free way to exchange files in your local network.</p>
-            <p>MailMan Dev<br>
-                7 Silicon Avenue<br>
-                NYC<br><br>
-                
-                888-777-6665<br>
-                <a href="mailto:reach.mailman@gmail.com" style="color:white">reach.mailman@gmail.com</a></p>
-            <table>
-                
-            </table>
-    </div> -->
 
     <div class="container">
-        <div class="row">
-            <div class="col-12 col-md-4" style="margin-top: 15px;">
-                <div class="card">
+        <div class="row" style="display: flex;height: 600px;">
+            <div class="col-12 col-md-4" style="margin-top: 15px; width:fit-content;">
+                <div class="card" style="height: 400px;">
                     <div class="card-body"
                         style="height: 100%;display: flex;flex-direction: column; justify-content: space-between;">
                         <div>
-                            <p class="card-text" style="padding-top: 30px;">So join us today and discover how easy file sharing can 
+                            <p class="card-text" style="padding-top: 30px;">So join us today and discover how easy file
+                                sharing can
                                 be with MailMan<br> the hassle-free way to exchange files in your local network.</p>
                         </div>
                         <div>
                             <p>MailMan Dev<br>
                                 7 Silicon Avenue<br>
                                 NYC<br><br><br>
-                                
-                                888-777-6665<br>
-                                <a href="mailto:reach.mailman@gmail.com" style="color:white">reach.mailman@gmail.com</a>
-                            </p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            
-            <div class="col-12 col-md-4" style="margin-top: 15px;">
-                <div class="card">
-                    <div class="card-body"
-                        style="height: 100%;display: flex;flex-direction: column; justify-content: space-between;">
-                        <div>
-                            <p>MailMan Dev<br>
-                                7 Silicon Avenue<br>
-                                NYC<br><br><br>
-                                
                                 888-777-6665<br>
                                 <a href="mailto:reach.mailman@gmail.com" style="color:white">reach.mailman@gmail.com</a>
                             </p>
@@ -86,27 +56,74 @@
                 </div>
             </div>
 
+            <div class="col-12 col-md-4" style="margin-top: 15px; width:fit-content; margin-left: 150px;">
+                <div class="card" style="height: 400px;">
+                    <div class="card-body">
+                        <table>
+                            <tr>
+                                <td><label for="first_name">First Name*:</label></td>
+                                <td><label for="last_name">Last Name:</label></td>
+                            </tr>
+                            <tr>
+                                <td><input type="text" id="first_name" name="first_name" required></td>
+                                <td><input type="text" id="last_name" name="last_name"></td>
+                            </tr>
+                            <tr>
+                                <td colspan="4"><label for="email">Email*:</label></td>
+                            </tr>
+                            <tr>
+                                <td colspan="4"><input type="email" id="email" name="email" required></td>
+                            </tr>
+                            <tr>
+                                <td colspan="4"><label for="content">Message*:</label></td>
+                            </tr>
+                            <tr>
+                                <td colspan="4"><textarea id="content" name="content" rows="8" required></textarea></td>
+                            </tr>
+                            <tr>
+                                <td colspan="4" style="text-align: center;">
+                                    <button type="submit" id="submitButton"
+                                        style="background-color: white; color: black; border-radius: 10px; padding: 10px 20px; border: none;">Submit</button>
+                                    <p class="success-message" id="successMessage"></p>
+                                    <p class="fail-message" id="failMessage"></p>
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 
+    <script>
+        const form = document.querySelector('form');
+        const successMessage = document.getElementById('successMessage');
+        const failMessage = document.getElementById('failMessage');
+        const submitButton = document.getElementById('submitButton');
 
-    <footer class="bg-dark text-center " style="color: white; font-size: 15px;">
-        <img src="public/line-2.png" style="width :100% ;padding: 20px;">
-        <p>&copy; MailMan 2023</p>
-    </footer>
-    <script
-    src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-    crossorigin="anonymous"
-  ></script>
-  <script
-    src="https://cdn.jsdelivr.net/npm/popper.js@1.14.3/dist/umd/popper.min.js"
-    integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
-    crossorigin="anonymous"
-  ></script>
-  <script
-    src="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/js/bootstrap.min.js"
-    integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
-    crossorigin="anonymous"
-  ></script>
+        submitButton.addEventListener('click', function (event) {
+            event.preventDefault();
+
+            const firstName = document.getElementById('first_name').value;
+            const email = document.getElementById('email').value;
+            const content = document.getElementById('content').value;
+
+            if (firstName && email && content) {
+                successMessage.textContent = "Thank you! Your message has been submitted.";
+            } else {
+                failMessage.textContent = "Please fill out all required fields.";
+            }
+        });
+    </script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.3/dist/umd/popper.min.js"
+        integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/js/bootstrap.min.js"
+        integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+        crossorigin="anonymous"></script>
 </body>
 
 </html>

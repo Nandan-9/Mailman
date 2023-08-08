@@ -98,7 +98,8 @@ a:hover {
   }
   a:hover,
   a.active {
-    background: none;
+  text-decoration: none;
+  background: none;
     color: #0082e6;
   }
   #check:checked ~ ul {
@@ -156,10 +157,10 @@ a:hover {
   .Image1 {
     width: 150%;
   }
-  .EndTitle{
+  .EndTitle {
     font-size: 30px;
   }
-  .EndContent{
+  .EndContent {
     font-size: 15px;
   }
 }

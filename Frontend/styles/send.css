@@ -1,12 +1,12 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap");
 
-body{
+body {
   background-color: #232322;
   /* overflow-y: hidden; Hide vertical scrollbar */
   overflow-x: hidden;
 }
-.header{
-  position:relative;
+.header {
+  position: relative;
   top: 10px;
   width: 100%;
   height: 51px;
@@ -14,85 +14,81 @@ body{
   justify-content: space-between;
   border-bottom: 1px solid #444343;
 }
-.header h2{
-  position:absolute;
+.header h2 {
+  position: absolute;
   top: 20px;
   left: 56px;
   transform: translate(0%, -50%);
   letter-spacing: 4.7px;
   color: aliceblue;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
 }
-.file-input{
+.file-input {
   opacity: 0;
   width: 0.1px;
   height: 0.1px;
   position: absolute;
 }
-label{
+label {
   color: rgb(255, 255, 255);
   position: relative;
   right: 240px;
   padding: 10px 30px 10px 30px;
   border-radius: 5px;
   background-color: rgb(18, 105, 182);
-  font-family: 'Poppins', sans-serif;
-  
+  font-family: "Poppins", sans-serif;
 }
-.label-image{
+.label-image {
   color: rgb(255, 255, 255);
   position: absolute;
   padding: 10px 30px 10px 30px;
   border-radius: 5px;
   background-color: rgb(18, 105, 182);
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
 }
 
-.label-share{
+.label-share {
   position: absolute;
 }
 
-
-label :hover{
+label :hover {
   color: rgb(0, 0, 0);
   background-color: aliceblue;
 }
-.search-bar input[type="text"]{
+.search-bar input[type="text"] {
   padding-left: 45px;
   left: 26px;
-  position:relative;
+  position: relative;
   width: 920px;
   height: 38px;
   border: 1px;
   border-radius: 5px;
   background-color: #292929;
   color: aliceblue;
-  font-family: 'Poppins', sans-serif;
-
+  font-family: "Poppins", sans-serif;
 }
-.search-bar button{
+.search-bar button {
   position: relative;
 }
-button{
-  background:none;
+button {
+  background: none;
   border: none;
-  position:absolute;
+  position: absolute;
   left: 200px;
 }
 ul {
   list-style-type: none;
 }
-li{
+li {
   text-decoration: none;
   padding: 15px 0px;
   margin: 10px;
-
 }
-a{
+a {
   text-decoration: none;
 }
 
-nav{
+nav {
   position: absolute;
   width: 250px;
   height: 100%;
@@ -100,73 +96,65 @@ nav{
   left: 23px;
   border-right: 1px solid #444343;
 }
-.nav-item{
-  font-family: 'Poppins', sans-serif;
+.nav-item {
+  font-family: "Poppins", sans-serif;
   padding-left: 10px;
   color: aliceblue;
-  
 }
-a:hover{
+a:hover {
   margin: 20px;
-  transition  : all 0.1s ease;
+  transition: all 0.1s ease;
 }
 
-.active{
+.active {
   margin: 20px;
 }
 
-.content-area{
+.content-area {
   position: absolute;
   display: flex;
   flex-direction: column;
   left: 17%;
-
 }
-.content-area .main-heading{
-  font-family: 'Poppins', sans-serif;
+.content-area .main-heading {
+  font-family: "Poppins", sans-serif;
   position: absolute;
   top: 50px;
   color: aliceblue;
-
 }
 
-.content-area   .file-list-title{
-  font-family: 'Poppins', sans-serif;
+.content-area .file-list-title {
+  font-family: "Poppins", sans-serif;
   color: aliceblue;
   font-size: 15px;
   display: flex;
-  justify-content: space-between
-
-
+  justify-content: space-between;
 }
-table{
-  font-family: 'Poppins', sans-serif;
+table {
+  font-family: "Poppins", sans-serif;
   color: aliceblue;
   position: relative;
   top: 120px;
 }
 
-th{
+th {
   color: rgb(26, 82, 236);
 }
-.content-area td{
+.content-area td {
   padding: 15px 150px 10px;
-
 }
 .content-area th {
-  width:500px;
+  width: 500px;
   padding: 0px 150px 10px;
 }
-.mytable{
+.mytable {
   padding: 0px 150px 10px;
-
 }
-.content-area .head{
+.content-area .head {
   border-bottom: 1px solid #444343;
-
 }
 
-.gallery{
+.gallery {
   position: absolute;
   top: 80px;
   left: 350px;
@@ -174,21 +162,19 @@ th{
   display: flex;
 
   flex-wrap: wrap;
-
 }
 
-.gallery img{
+.gallery img {
   flex-wrap: wrap;
   width: auto;
   height: 400px;
   padding: 10px;
 }
-.label-gallery{
+.label-gallery {
   position: absolute;
   right: 20px;
-
 }
-.container{
+.container {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -206,11 +192,11 @@ th{
   border-radius: 20px;
 }
 
-.container h3{
+.container h3 {
   position: relative;
   top: 100px;
 }
-.drag-area{
+.drag-area {
   width: 700px;
   height: 400px;
   display: flex;
@@ -220,15 +206,15 @@ th{
   margin: 30px;
 }
 
-.drag-area .icon{
+.drag-area .icon {
   font-size: 50px;
   padding: 20px;
 }
 
-.drag-area .btn{
+.drag-area .btn {
   color: rgb(36, 106, 255);
 }
-.drag-area button{
+.drag-area button {
   position: absolute;
   left: 360px;
   top: 350px;
