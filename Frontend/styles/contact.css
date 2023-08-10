@@ -148,17 +148,21 @@ td {
   padding: 10px;
   text-align: left;
 }
+input{
+  border-radius: 15px;
+}
 
 input[type="text"],
 input[type="email"],
 textarea {
+  border-radius: 15px;
   width: 100%;
   padding: 8px;
 }
 
 input[type="submit"] {
   background-color: #144992;
-  color: white;
+  color: #d9d9d9;
   border: none;
   padding: 10px 20px;
   cursor: pointer;

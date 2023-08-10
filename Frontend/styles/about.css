@@ -43,6 +43,7 @@ nav {
 }
 .content-header span {
   margin-top: 30px;
+  font-size: 26px;
 }
 label.logo {
   color: white;
@@ -147,6 +148,7 @@ a:hover {
 }
 .content-header span {
   margin-top: 30px;
+  font-size: 20px;
 }
 
 footer {
@@ -161,7 +163,7 @@ footer {
   top: 130px;
   margin-bottom: 10px;
   left: 200px;
-  font-size: 20px;
+  font-size: 18px;
 }
 
 .team {
@@ -173,14 +175,17 @@ footer {
   padding: 20px;
   border: 1px solid white;
   border-radius: 10px;
-  color: white;
+  background-color: #d9d9d9;
   align-items: center;
 }
 .team a {
   text-decoration: none;
-  color: white;
+  color: black;
 }
 
+.team h2{
+  color:black;
+}
 .team span {
   padding: 20px;
   font-size: 20px;

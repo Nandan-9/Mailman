@@ -34,20 +34,24 @@
     </div>
 
     <div class="container">
-        <div class="row" style="display: flex;height: 600px;">
-            <div class="col-12 col-md-4" style="margin-top: 15px; width:fit-content;">
+        <div class="row" style="display: flex;height: 600px; width: 1300px;">
+            <div class="col-12 col-md-4" style="margin-top: 15px; width: 70%;">
                 <div class="card" style="height: 400px;">
                     <div class="card-body"
                         style="height: 100%;display: flex;flex-direction: column; justify-content: space-between;">
                         <div>
-                            <p class="card-text" style="padding-top: 30px;">So join us today and discover how easy file
-                                sharing can
-                                be with MailMan<br> the hassle-free way to exchange files in your local network.</p>
+                            <p class="card-text" style="padding-top: 30px; font-size:18px ;">
+                                Join the ranks of satisfied users who have already discovered the transformative power
+                                of MailMan. Embrace a new era of stress-free file sharing and experience firsthand how
+                                effortless it can be to exchange files within your local network. Say hello to productivity
+                                and wave goodbye to file sharing woes – with MailMan, it's that simple.<br><br>
+                                So join us today and discover how easy file sharing can be with MailMan<br> 
+                                the hassle-free way to exchange files in your local network.</p><br>
                         </div>
                         <div>
-                            <p>MailMan Dev<br>
+                            <p style="font-size:18px">MailMan Dev<br>
                                 7 Silicon Avenue<br>
-                                NYC<br><br><br>
+                                NYC<br><br>
                                 888-777-6665<br>
                                 <a href="mailto:reach.mailman@gmail.com" style="color:white">reach.mailman@gmail.com</a>
                             </p>
@@ -55,13 +59,12 @@
                     </div>
                 </div>
             </div>
-
-            <div class="col-12 col-md-4" style="margin-top: 15px; width:fit-content; margin-left: 150px;">
+            <div class="col-12 col-md-4" style="margin-top: 15px; margin-left: 100px;">
                 <div class="card" style="height: 400px;">
                     <div class="card-body">
                         <table>
                             <tr>
-                                <td><label for="first_name">First Name*:</label></td>
+                                <td><label for="first_name">First Name <font color="red">*</font>:</label></td>
                                 <td><label for="last_name">Last Name:</label></td>
                             </tr>
                             <tr>
@@ -69,13 +72,13 @@
                                 <td><input type="text" id="last_name" name="last_name"></td>
                             </tr>
                             <tr>
-                                <td colspan="4"><label for="email">Email*:</label></td>
+                                <td colspan="4"><label for="email">Email <font color="red">*</font>:</label></td>
                             </tr>
                             <tr>
                                 <td colspan="4"><input type="email" id="email" name="email" required></td>
                             </tr>
                             <tr>
-                                <td colspan="4"><label for="content">Message*:</label></td>
+                                <td colspan="4"><label for="content">Message <font color="red">*</font>:</label></td>
                             </tr>
                             <tr>
                                 <td colspan="4"><textarea id="content" name="content" rows="8" required></textarea></td>
@@ -83,7 +86,13 @@
                             <tr>
                                 <td colspan="4" style="text-align: center;">
                                     <button type="submit" id="submitButton"
-                                        style="background-color: white; color: black; border-radius: 10px; padding: 10px 20px; border: none;">Submit</button>
+                                        style="background-color: white; 
+                                        color: black; 
+                                        border-radius: 10px;
+                                        padding: 10px 20px; 
+                                        border: none;
+                                        font-size: 19px;"
+                                    >Submit !</button>
                                     <p class="success-message" id="successMessage"></p>
                                     <p class="fail-message" id="failMessage"></p>
                                 </td>
