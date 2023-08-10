@@ -117,10 +117,19 @@
             const email = document.getElementById('email').value;
             const content = document.getElementById('content').value;
 
+            const emailRegex = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$/;
+
             if (firstName && email && content) {
-                successMessage.textContent = "Thank you! Your message has been submitted.";
+                if (emailRegex.test(email)) {
+                    successMessage.textContent = "Thank you! Your message has been submitted.";
+                    failMessage.textContent = "";
+                } else {
+                    failMessage.textContent = "Please enter a valid email address.";
+                    successMessage.textContent = "";
+                }
             } else {
                 failMessage.textContent = "Please fill out all required fields.";
+                successMessage.textContent = "";
             }
         });
     </script>
