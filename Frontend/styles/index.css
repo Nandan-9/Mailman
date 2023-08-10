@@ -47,6 +47,7 @@ nav ul li a {
 }
 a.active,
 a:hover {
+  color: white;
   background: #1b9bff;
   transition: 0.5s;
 }
@@ -98,8 +99,8 @@ a:hover {
   }
   a:hover,
   a.active {
-  text-decoration: none;
-  background: none;
+    text-decoration: none;
+    background: none;
     color: #0082e6;
   }
   #check:checked ~ ul {
